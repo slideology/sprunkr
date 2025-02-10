@@ -94,6 +94,24 @@
         }
     }
     </script>
+    
+    <!-- Game Loading Script -->
+    <script>
+        function loadGame(buttonElement, gameUrl) {
+            const container = buttonElement.closest('.game-container');
+            const iframe = document.createElement('iframe');
+            
+            iframe.src = gameUrl;
+            iframe.className = 'w-full border-0 aspect-[4/3] md:aspect-[16/10] lg:aspect-[16/9]';
+            iframe.style = 'min-height: 300px; max-height: 635px; height: calc(100vw * 0.5625);';
+            iframe.scrolling = 'no';
+            iframe.allowFullscreen = true;
+            
+            // 移除封面和按钮
+            container.innerHTML = '';
+            container.appendChild(iframe);
+        }
+    </script>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen flex flex-col" x-data="{ theme: 'light', mobileMenu: false }">

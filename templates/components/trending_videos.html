@@ -1,21 +1,35 @@
 <!-- Trending Videos Section -->
-<div class="py-24 bg-white dark:bg-gray-800">
+<div class="py-12 sm:py-16 bg-white dark:bg-gray-800">
     <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
-            {{ translations.get('trending_videos', {}).get('title', 'Trending Videos') }}
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
+            Trending Videos like {{ page_title }}
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-5 gap-4">
             {% for video in videos %}
             {% if video.video_id %}
             <!-- Video Container {{ loop.index }} -->
-            <div class="relative rounded-xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-900">
-                <div id="player{{ loop.index }}" class="w-full" style="height: calc(100vh / 3);"></div>
+            <div class="video-container relative rounded-xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-900 hover:shadow-xl transition-shadow duration-300" data-index="{{ loop.index }}">
+                <div class="relative">
+                    <div id="player{{ loop.index }}" class="w-full aspect-[9/16]">
+                        <!-- Loading Placeholder -->
+                        <div class="loading-placeholder absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700">
+                            <div class="animate-pulse flex flex-col items-center">
+                                <div class="w-10 h-10 rounded-full border-3 border-purple-500 border-t-transparent animate-spin"></div>
+                                <span class="mt-2 text-xs text-gray-600 dark:text-gray-400">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             {% else %}
             <!-- 预留的视频容器 {{ loop.index }} -->
-            <div class="relative rounded-xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-900">
-                <div class="w-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center" style="height: calc(100vh / 3);">
-                    <span class="text-gray-400 dark:text-gray-500">{{ video.placeholder_text|default(page_title|default('Coming Soon')) }}</span>
+            <div class="video-container relative rounded-xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-900">
+                <div class="w-full aspect-[9/16] bg-gray-200 dark:bg-gray-700 flex flex-col items-center justify-center">
+                    <svg class="w-10 h-10 text-gray-400 dark:text-gray-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-xs text-gray-400 dark:text-gray-500">{{ video.placeholder_text|default('Coming Soon')|safe }}</span>
                 </div>
             </div>
             {% endif %}
@@ -25,40 +39,138 @@
 </div>
 
 <!-- YouTube API Script -->
-<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://www.youtube.com/iframe_api" defer></script>
 <script>
+// 存储播放器实例和配置
 var players = [];
-function onYouTubeIframeAPIReady() {
+var loadedPlayers = new Set();
+var videoConfigs = [
     {% for video in videos %}
     {% if video.video_id %}
-    players.push(new YT.Player('player{{ loop.index }}', {
-        height: '100%',
-        width: '100%',
-        videoId: '{{ video.video_id }}',
-        playerVars: {
-            'playsinline': 1,
-            'modestbranding': 1,
-            'rel': 0
-        }
-    }));
+    {
+        index: {{ loop.index }},
+        videoId: '{{ video.video_id|escape|safe }}',
+        initialized: false
+    },
     {% endif %}
     {% endfor %}
+];
+
+// 检查 YouTube API 是否加载成功
+function checkYouTubeApiLoaded() {
+    return typeof YT !== 'undefined' && YT && YT.Player;
 }
 
-// 响应式调整
-function adjustVideoHeight() {
+// YouTube API 就绪回调
+function onYouTubeIframeAPIReady() {
+    if (!checkYouTubeApiLoaded()) {
+        console.error('YouTube API failed to load');
+        showAPIError();
+        return;
+    }
+
+    // 初始化可见的视频
+    initializeVisiblePlayers();
+}
+
+// 显示 API 错误
+function showAPIError() {
     const containers = document.querySelectorAll('.video-container');
     containers.forEach(container => {
-        if (window.innerWidth < 768) { // 移动端
-            container.style.height = 'calc(100vh / 3)';
-        } else {
-            container.style.height = 'calc(100vh / 3)';
-        }
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700';
+        errorDiv.innerHTML = `
+            <div class="text-center">
+                <svg class="w-12 h-12 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-400">Failed to load video player</span>
+            </div>
+        `;
+        container.appendChild(errorDiv);
     });
 }
 
-// 监听窗口大小变化
-window.addEventListener('resize', adjustVideoHeight);
-// 初始调整
-document.addEventListener('DOMContentLoaded', adjustVideoHeight);
+// 初始化可见的播放器
+function initializeVisiblePlayers() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const container = entry.target;
+                const index = parseInt(container.dataset.index);
+                const config = videoConfigs.find(c => c.index === index);
+                
+                if (config && !config.initialized) {
+                    createPlayer(config.index, config.videoId);
+                    config.initialized = true;
+                }
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '50px'
+    });
+
+    // 观察所有视频容器
+    document.querySelectorAll('.video-container').forEach(container => {
+        observer.observe(container);
+    });
+}
+
+// 创建播放器
+function createPlayer(index, videoId) {
+    try {
+        if (!videoId || typeof videoId !== 'string') {
+            throw new Error('Invalid video ID');
+        }
+
+        players[index - 1] = new YT.Player(`player${index}`, {
+            height: '100%',
+            width: '100%',
+            videoId: videoId,
+            playerVars: {
+                'playsinline': 1,
+                'modestbranding': 1,
+                'rel': 0,
+                'autoplay': 0
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onError': onPlayerError
+            }
+        });
+    } catch (error) {
+        console.error(`Failed to create player ${index}:`, error);
+        onPlayerError({ target: document.getElementById(`player${index}`) });
+    }
+}
+
+// 播放器就绪回调
+function onPlayerReady(event) {
+    const playerElement = event.target.getIframe();
+    const loadingPlaceholder = playerElement.parentElement.querySelector('.loading-placeholder');
+    if (loadingPlaceholder) {
+        loadingPlaceholder.style.display = 'none';
+    }
+}
+
+// 播放器错误回调
+function onPlayerError(event) {
+    const playerElement = event.target.getIframe();
+    const container = playerElement.parentElement;
+    
+    // 显示错误信息
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'absolute inset-0 flex items-center justify-center bg-gray-200 dark:bg-gray-700';
+    errorDiv.innerHTML = `
+        <div class="text-center">
+            <svg class="w-12 h-12 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="text-gray-600 dark:text-gray-400">Video unavailable</span>
+        </div>
+    `;
+    
+    container.appendChild(errorDiv);
+}
 </script>

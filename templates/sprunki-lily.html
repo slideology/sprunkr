@@ -79,6 +79,17 @@
     {% with current_page='lily' %}
     {% include 'components/trending_games.html' %}
     {% endwith %}
+
+    {% with videos=[
+        {'video_id': 'jaaS4ONFTq8'},
+        {'video_id': 'hovcryDL0Qg'},
+        {'video_id': 'elgMf0N3e8Y'},
+        {'video_id': 'Cbg2rGADprE'},
+        {'video_id': 'ru0B4JRS8vs'}
+    ] %}
+    {% include 'components/trending_videos.html' %}
+    {% endwith %}
+    
     <!-- faq Section -->
     {% include 'components/faq_section.html' %}
 </div>

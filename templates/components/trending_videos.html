@@ -51,10 +51,10 @@ var videoConfigs = [
         index: {{ loop.index }},
         videoId: '{{ video.video_id|escape|safe }}',
         initialized: false
-    },
+    }{% if not loop.last %},{% endif %}
     {% endif %}
     {% endfor %}
-];
+];      
 
 // 检查 YouTube API 是否加载成功
 function checkYouTubeApiLoaded() {

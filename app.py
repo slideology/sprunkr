@@ -201,6 +201,27 @@ def get_faqs_for_page(page_name):
             ],
             'conclusion': 'Lily brings a touch of natural beauty and harmony to the Sprunki universe.'
         },
+        'shatter': {
+            'faqs': [
+                {
+    "question": "What is the Shatter Sprunki Mod?",
+    "answer": "The Shatter Sprunki Mod is a fun - filled addition to the Sprunki universe. It combines smooth, porridge - like beats with whimsical banana - themed visuals, offering a light - hearted and groovy musical experience."
+},
+{
+    "question": "What are the features of the Shatter Sprunki Mod?",
+    "answer": "Features include banana - themed Sprunki characters with yellow - tinted designs, wacky expressions, and breakfast - inspired animations; smooth & creamy soundscapes that blend warm melodies with funky percussion; playful and vibrant visuals with banana - filled backgrounds, animated porridge bowls, and dancing bananas; and wacky sound effects like banana peel slips and slurping porridge sounds."
+},
+{
+    "question": "How do you play the Shatter Sprunki Mod?",
+    "answer": "First, select banana - infused characters from the funny, porridge - loving Sprunki lineup. Then, create tasty tunes by dragging and dropping these characters onto the stage to mix sweet melodies with banana rhythms. Next, experiment with different banana - themed character interactions to unlock hidden musical surprises. Finally, save and share your smooth and funky porridge tracks with the Sprunki community."
+},
+{
+    "question": "Why should one play the Shatter Sprunki Mod?",
+    "answer": "One should play it for a light - hearted, fun experience as it's silly and creative, making it perfect for casual play. Fans of quirky music mods will enjoy its playful themes and goofy visuals. Also, the smooth, bouncy beats bring a fresh and unique twist to Sprunki gameplay."
+}
+            ],
+            'conclusion': 'Sprunki Shatter, Incredibox New Mods, Gives the Sprunki world Inspired By @mondaymuncher ParaSprunki 15.0 Part 1'
+        },
         'fiddlebops': {
             'faqs': [
                 {
@@ -673,6 +694,14 @@ def sprunki_lily():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+@app.route('/sprunki-shatter')
+def sprunki_shatter():
+    faq_data = get_faqs_for_page('shatter')
+    return render_template('sprunki-shatter.html',
+                         page_title='Sprunki Shatter',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())                         
 
 @app.route('/sprunki-fiddlebops')
 def sprunki_fiddlebops():

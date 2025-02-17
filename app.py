@@ -128,6 +128,31 @@ def get_faqs_for_page(page_name):
             ],
             'conclusion': 'Sprunki Ketchup brings a tasty twist to music creation with its food-themed characters and sounds.'
         },
+        '1996': {
+            'faqs': [
+                {
+    "question": "What is Sprunki 1996 But Better?",
+    "answer": "Sprunki 1996 But Better is an enhanced retro mod that brings back the nostalgic vibe of 90s music with modern polish and enhanced features. It combines elements from the 90s and contemporary improvements."
+},
+{
+    "question": "What are the features of Sprunki 1996 But Better?",
+    "answer": "Features include classic 90s beats with crystal - clear audio quality, retro - style characters with smooth modern animations, vintage sound effects with contemporary processing, old - school vocals with improved clarity, and traditional rhythms with added depth. It also has improved graphics, enhanced sound quality, and modern gameplay features."
+},
+{
+    "question": "Who is Sprunki 1996 But Better suitable for?",
+    "answer": "It's suitable for both 90s enthusiasts who want to relive the music of that era and new players who can enjoy the combination of classic elements and modern enhancements."
+},
+{
+    "question": "What can players do with Sprunki 1996 But Better?",
+    "answer": "Players can create their own nostalgic masterpieces using the mod's features, experiencing the magic of 90s music with the convenience of modern - day improvements."
+},
+{
+    "question": "Why should players try Sprunki 1996 But Better?",
+    "answer": "Players should try it to remix the 90s, to experience the evolution of classic 90s elements with modern enhancements, and to enjoy a unique combination of nostalgia and contemporary features in music creation."
+}
+            ],
+            'conclusion': 'Sprunki 1996 , Incredibox New Mods, Gives the Sprunki world Inspired'
+        },
         'lily': {
             'faqs': [
                 {
@@ -694,6 +719,16 @@ def sprunki_lily():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+
+@app.route('/sprunki-1996')
+def sprunki_1996():
+    faq_data = get_faqs_for_page('1996')
+    return render_template('sprunki-1996.html',
+                         page_title='Sprunki 1996',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())                         
+
 @app.route('/sprunki-shatter')
 def sprunki_shatter():
     faq_data = get_faqs_for_page('shatter')

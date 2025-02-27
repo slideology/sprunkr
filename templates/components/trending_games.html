@@ -4,219 +4,261 @@
         <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center bg-gradient-to-r from-red-600 via-red-500 to-black bg-clip-text text-transparent">
             Trending games like {{ page_title }}
         </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-10 gap-2 sm:gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3">
             <!-- Sprunki Lily Card -->
-            <a href="https://sprunkr.online/sprunki-lily" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-lily" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
                     <img src="{{ url_for('static', filename='images/games/sprunki-lily.png') }}" 
                          alt="Sprunki Lily img"
                          loading="lazy" 
-                         class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_lily', 'Sprunki - Lily') }}
-                        </p>
-                    </div>
+                         class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_lily', 'Sprunki - Lily') }}
+                    </p>
                 </div>
             </a>
             <!-- Sprunki Retake But Human Card -->
-            <a href="https://sprunkr.online/sprunki-retake-but-human" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-retake-but-human" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
                     <img src="{{ url_for('static', filename='images/games/sprunki-retake-but-human.png') }}"
                         alt="Sprunki Retake But Human img"
                         loading="lazy" 
-                        class="w-full h-full object-cover">
+                        class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
                     <div class="absolute inset-0 bg-gradient-to-t from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
                         {{ translations.get('trending', {}).get('sprunki_retake_but_human', 'Sprunki - Retake But Human') }}
                     </p>
-                    </div>
-                    </div>
+                </div>
             </a>
-            <!-- Sprunki Agent Card -->
-            <a href="https://sprunkr.online/sprunki-agents" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
-                    <img src="{{ url_for('static', filename='images/games/sprunki-agents.png') }}" 
-                         alt="Sprunki Agent img"
-                         loading="lazy" 
-                         class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_agents', 'Sprunki - Agent') }}
-                        </p>
-                    </div>
+            <!-- Sprunki Agents Card -->
+            <a href="https://sprunkr.online/sprunki-agents" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
+                    <img src="{{ url_for('static', filename='images/games/sprunki-agents.png') }}"
+                        alt="Sprunki Agents img"
+                        loading="lazy" 
+                        class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_agents', 'Sprunki - Agents') }}
+                    </p>
                 </div>
             </a>
              <!-- Sprunki 1996 Card -->
-             <a href="https://sprunkr.online/sprunki-1996" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
-                    <img src="{{ url_for('static', filename='images/games/sprunki-1996.png') }}" 
-                         alt="Sprunki 1996 img"
-                         loading="lazy" 
-                         class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_1996', 'Sprunki - 1996') }}
-                        </p>
-                    </div>
+             <a href="https://sprunkr.online/sprunki-1996" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
+                    <img src="{{ url_for('static', filename='images/games/sprunki-1996.png') }}"
+                        alt="Sprunki 1996 img"
+                        loading="lazy" 
+                        class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-            </a>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_1996', 'Sprunki - 1996') }}
+                    </p>
+                </div>
+            </a>    
             <!-- Sprunki Shatter Card -->
-            <a href="https://sprunkr.online/sprunki-shatter" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-shatter" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
                     <img src="{{ url_for('static', filename='images/games/sprunki-shatter.png') }}" 
                          alt="Sprunki Shatter img"
                          loading="lazy" 
-                         class="w-full h-full object-cover">
+                         class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_shatter', 'Sprunki - Shatter') }}
-                        </p>
-                    </div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_shatter', 'Sprunki - Shatter') }}
+                    </p>
                 </div>
             </a>
             <!-- Sprunki Sprunksters Card -->
-            <a href="https://sprunkr.online/sprunki-sprunksters" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-sprunksters" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
                     <img src="{{ url_for('static', filename='images/games/sprunki-sprunksters.png') }}" 
                          alt="Sprunki Sprunksters img"
                          loading="lazy" 
-                         class="w-full h-full object-cover">
+                         class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_sprunksters', 'Sprunki - Sprunksters') }}
-                        </p>
-                    </div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_sprunksters', 'Sprunki - Sprunksters') }}
+                    </p>
                 </div>
             </a>
             <!-- Sprunki Pyramixed Card -->
-<a href="https://sprunkr.online/sprunki-pyramixed" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-    <div class="relative aspect-[4/3]">
-        <img src="{{ url_for('static', filename='images/games/sprunki-pyramixed.png') }}"
-             alt="Sprunki Pyramixed img"
-             loading="lazy" 
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4">
-            <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                {{ translations.get('trending', {}).get('sprunki_pyramixed', 'Sprunki - Pyramixed') }}
-            </p>
-        </div>
-    </div>
-</a>
-  <!-- Sprunki Spruted Card -->
-  <a href="https://sprunkr.online/sprunki-spruted" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-    <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-pyramixed" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
+                    <img src="{{ url_for('static', filename='images/games/sprunki-pyramixed.png') }}" 
+                         alt="Sprunki Pyramixed img"
+                         loading="lazy" 
+                         class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_pyramixed', 'Sprunki - Pyramixed') }}
+                    </p>
+                </div>
+            </a>
+  <!-- Sprunki Spruted Card --> 
+  <a href="https://sprunkr.online/sprunki-spruted" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+    <!-- 上方是游戏封面图 -->
+    <div class="relative">
         <img src="{{ url_for('static', filename='images/games/sprunki-spruted.png') }}" 
              alt="Sprunki Spruted img"
              loading="lazy" 
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-green-500 via-emerald-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4">
-            <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                {{ translations.get('trending', {}).get('sprunki_spruted', 'Sprunki - Spruted') }}
-            </p>
-        </div>
+             class="w-full aspect-[4/3] object-cover">
+        <!-- 悬停效果 -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <!-- 下方是游戏标题 -->
+    <div class="p-2 bg-gray-100 dark:bg-gray-800">
+        <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+            {{ translations.get('trending', {}).get('sprunki_spruted', 'Sprunki - Spruted') }}
+        </p>
     </div>
 </a>
    <!-- Sprunki Ketchup Card -->
-   <a href="https://sprunkr.online/sprunki-ketchup" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-    <div class="relative aspect-[4/3]">
+   <a href="https://sprunkr.online/sprunki-ketchup" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+    <!-- 上方是游戏封面图 -->
+    <div class="relative">
         <img src="{{ url_for('static', filename='images/games/sprunki-ketchup.png') }}" 
              alt="Sprunki Ketchup img"
              loading="lazy" 
-             class="w-full h-full object-cover">
+             class="w-full aspect-[4/3] object-cover">
+        <!-- 悬停效果 -->
         <div class="absolute inset-0 bg-gradient-to-t from-red-900 via-red-700 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4">
-            <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                {{ translations.get('trending', {}).get('sprunki_ketchup', 'Sprunki - Ketchup') }}
-            </p>
-        </div>
+    </div>
+    <!-- 下方是游戏标题 -->
+    <div class="p-2 bg-gray-100 dark:bg-gray-800">
+        <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+            {{ translations.get('trending', {}).get('sprunki_ketchup', 'Sprunki - Ketchup') }}
+        </p>
     </div>
 </a>
   <!-- Sprunki Banana Card -->
-  <a href="https://sprunkr.online/sprunki-banana" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-    <div class="relative aspect-[4/3]">
+  <a href="https://sprunkr.online/sprunki-banana" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+    <!-- 上方是游戏封面图 -->
+    <div class="relative">
         <img src="{{ url_for('static', filename='images/games/sprunki-banana.png') }}" 
              alt="Sprunki Banana img"
              loading="lazy" 
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-yellow-500 via-yellow-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4">
-            <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                {{ translations.get('trending', {}).get('sprunki_banana', 'Sprunki - Banana') }}
-            </p>
-        </div>
+             class="w-full aspect-[4/3] object-cover">
+        <!-- 悬停效果 -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <!-- 下方是游戏标题 -->
+    <div class="p-2 bg-gray-100 dark:bg-gray-800">
+        <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+            {{ translations.get('trending', {}).get('sprunki_banana', 'Sprunki - Banana') }}
+        </p>
     </div>
 </a>
             <!-- Sprunki Megalovania Card -->
-            <a href="https://sprunkr.online/sprunki-megalovania" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-megalovania" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
                     <img src="{{ url_for('static', filename='images/games/sprunki-megalovania.png') }}" 
                          alt="Sprunki Megalovania img"
                          loading="lazy" 
-                         class="w-full h-full object-cover">
+                         class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_megalovania', 'Sprunki - Megalovania') }}
-                        </p>
-                    </div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_megalovania', 'Sprunki - Megalovania') }}
+                    </p>
                 </div>
             </a>
           
             <!-- Sprunki Sprunkr Card -->
-            <a href="https://sprunkr.online/" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-                <div class="relative aspect-[4/3]">
+            <a href="https://sprunkr.online/sprunki-sprunkr" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+                <!-- 上方是游戏封面图 -->
+                <div class="relative">
                     <img src="{{ url_for('static', filename='images/games/sprunki-sprunkr.png') }}" 
                          alt="Sprunki Sprunkr img"
                          loading="lazy" 
-                         class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-red-600 via-red-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4">
-                        <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                            {{ translations.get('trending', {}).get('sprunki_sprunkr', 'Sprunki - Sprunkr') }}
-                        </p>
-                    </div>
+                         class="w-full aspect-[4/3] object-cover">
+                    <!-- 悬停效果 -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <!-- 下方是游戏标题 -->
+                <div class="p-2 bg-gray-100 dark:bg-gray-800">
+                    <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+                        {{ translations.get('trending', {}).get('sprunki_sprunkr', 'Sprunki - Sprunkr') }}
+                    </p>
                 </div>
             </a>
           
-         
+        
 
 <!-- Sprunki Parodybox Card -->
-<a href="https://sprunkr.online/sprunki-parodybox" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-    <div class="relative aspect-[4/3]">
-        <img src="{{ url_for('static', filename='images/games/sprunki-parodybox.png') }}"
-             alt="Sprunki Parodybox"
+<a href="https://sprunkr.online/sprunki-parodybox" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+    <!-- 上方是游戏封面图 -->
+    <div class="relative">
+        <img src="{{ url_for('static', filename='images/games/sprunki-parodybox.png') }}" 
+             alt="Sprunki Parodybox img"
              loading="lazy" 
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4">
-            <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                {{ translations.get('trending', {}).get('sprunki_parodybox', 'Sprunki - Parodybox') }}
-            </p>
-        </div>
+             class="w-full aspect-[4/3] object-cover">
+        <!-- 悬停效果 -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <!-- 下方是游戏标题 -->
+    <div class="p-2 bg-gray-100 dark:bg-gray-800">
+        <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+            {{ translations.get('trending', {}).get('sprunki_parodybox', 'Sprunki - Parodybox') }}
+        </p>
     </div>
 </a>
 <!-- Sprunki Fiddlebops Card -->
-<a href="https://sprunkr.online/sprunki-fiddlebops" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-    <div class="relative aspect-[4/3]">
-        <img src="{{ url_for('static', filename='images/games/sprunki-fiddlebops.png') }}"
-             alt="Sprunki Fiddlebops img"
+<a href="https://sprunkr.online/sprunki-fiddlebops" class="group relative rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 flex flex-col">
+    <!-- 上方是游戏封面图 -->
+    <div class="relative">
+        <img src="{{ url_for('static', filename='images/games/sprunki-fiddlebops.png') }}" 
+             alt="Sprunki FiddleBops img"
              loading="lazy" 
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-blue-500 via-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="absolute bottom-0 left-0 right-0 p-4">
-            <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200 group-hover:text-white group-hover:drop-shadow-lg transition-colors duration-300">
-                {{ translations.get('trending', {}).get('sprunki_fiddlebops', 'Sprunki - Fiddlebops') }}
-            </p>
-        </div>
+             class="w-full aspect-[4/3] object-cover">
+        <!-- 悬停效果 -->
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-700/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
+    <!-- 下方是游戏标题 -->
+    <div class="p-2 bg-gray-100 dark:bg-gray-800">
+        <p class="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 truncate text-center">
+            {{ translations.get('trending', {}).get('sprunki_fiddlebops', 'Sprunki - FiddleBops') }}
+        </p>
     </div>
 </a>
 

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Sprunki Retake New Human Update Mod for Incredibox Game - Enhanced Gameplay{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Discover Sprunki Retake New Human Mod - revitalizing classic characters through humanized designs, fluid animations, and immersive musical storytelling for enhanced gameplay engagement.">
+{% endblock %}
+
+{% block og_title %}Sprunki Retake New Human Update Mod for Incredibox Game - Enhanced Gameplay{% endblock %}
+{% block og_description %}Discover Sprunki Retake New Human Mod - revitalizing classic characters through humanized designs, fluid animations, and immersive musical storytelling for enhanced gameplay engagement.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/retake-new-human-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/games/retake-new-human-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/games/retake-new-human-favicon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunki-retake-new-human/sprunki-retake-new-human.html",
+        title="Sprunki Retake New Human",
+        description="Discover Sprunki Retake New Human Mod - revitalizing classic characters through humanized designs, fluid animations, and immersive musical storytelling for enhanced gameplay engagement."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    {% with current_page='retake-new-human' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+
+    <!-- faq Section -->
+    {% include 'components/faq_section.html' %}
+</div>
+{% endblock %}

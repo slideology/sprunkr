@@ -271,6 +271,14 @@ def sprunki_retake_but_human():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+@app.route('/sprunki-retake-new-human')
+def sprunki_retake_new_human():
+    faq_data = get_faqs_for_page('retake-new-human')
+    return render_template('sprunki-retake-new-human.html',
+                         page_title='Sprunki Retake New Human',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 
 @app.route('/sprunki-parodybox')
 def sprunki_parodybox():

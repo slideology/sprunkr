@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki Spfundi New Oc Mod On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Spfundi: Where strategy meets fantasy - Navigate surreal interconnected worlds using clever sprunk manipulation. Overcome environmental puzzles in this immersive cerebral adventure.">
+{% endblock %}
+
+{% block og_title %}Spfundi Sprunki New Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Spfundi: Where strategy meets fantasy - Navigate surreal interconnected worlds using clever sprunk manipulation. Overcome environmental puzzles in this immersive cerebral adventure.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-spfundi-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/spfundi-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/spfundi-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://game.sprunkr.online/sprunki-spfundi.html",
+        title="Sprunki Spfundi",
+        description="Spfundi: Where strategy meets fantasy - Navigate surreal interconnected worlds using clever sprunk manipulation. Overcome environmental puzzles in this immersive cerebral adventure."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Adsterra Native Banner Ad 
+    <div class="container mx-auto px-4 py-8">
+        <script async="async" data-cfasync="false" src="//pl25386595.profitablecpmrate.com/f978f53d3a3690a179256f47ca12dd04/invoke.js"></script>
+        <div id="container-f978f53d3a3690a179256f47ca12dd04"></div>
+    </div>
+    -->
+
+    <!-- Trending Games Section -->
+    {% with current_page='spfundi' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

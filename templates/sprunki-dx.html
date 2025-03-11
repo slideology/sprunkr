@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki DX New Oc Mod On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Sprunki DX reinvents precision platforming with lightning-fast gameplay. Master momentum-based mechanics, unlock speed-boosting power-ups, and compete globally on leaderboards in this free action-packed adventure.">
+{% endblock %}
+
+{% block og_title %}Sprunki DX New Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Sprunki DX reinvents precision platforming with lightning-fast gameplay. Master momentum-based mechanics, unlock speed-boosting power-ups, and compete globally on leaderboards in this free action-packed adventure.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-dx-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/dx-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/dx-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunki-dx/sprunki-dx.html",
+        title="Sprunki DX",
+        description="Sprunki DX reinvents precision platforming with lightning-fast gameplay. Master momentum-based mechanics, unlock speed-boosting power-ups, and compete globally on leaderboards in this free action-packed adventure."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Adsterra Native Banner Ad 
+    <div class="container mx-auto px-4 py-8">
+        <script async="async" data-cfasync="false" src="//pl25386595.profitablecpmrate.com/f978f53d3a3690a179256f47ca12dd04/invoke.js"></script>
+        <div id="container-f978f53d3a3690a179256f47ca12dd04"></div>
+    </div>
+    -->
+
+    <!-- Trending Games Section -->
+    {% with current_page='dx' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

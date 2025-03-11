@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki Angry New Oc Mod On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Sprunki Angry combines puzzle-solving strategy with emotional intelligence, tasking players to balance volatile creatures' moods in a unique tactical experience.">
+{% endblock %}
+
+{% block og_title %}Sprunki Angry New Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Sprunki Angry combines puzzle-solving strategy with emotional intelligence, tasking players to balance volatile creatures' moods in a unique tactical experience.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-angry-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/angry-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/angry-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunki-angry/sprunki-angry.html",
+        title="Sprunki Angry",
+        description="Sprunki Angry combines puzzle-solving strategy with emotional intelligence, tasking players to balance volatile creatures' moods in a unique tactical experience."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Adsterra Native Banner Ad 
+    <div class="container mx-auto px-4 py-8">
+        <script async="async" data-cfasync="false" src="//pl25386595.profitablecpmrate.com/f978f53d3a3690a179256f47ca12dd04/invoke.js"></script>
+        <div id="container-f978f53d3a3690a179256f47ca12dd04"></div>
+    </div>
+    -->
+
+    <!-- Trending Games Section -->
+    {% with current_page='angry' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

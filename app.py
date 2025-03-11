@@ -220,6 +220,24 @@ def sprunki_spfundi():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-angry')
+def sprunki_angry():
+    faq_data = get_faqs_for_page('angry')
+    return render_template('sprunki-angry.html',
+                         page_title='Sprunki Angry',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-dx')
+def sprunki_dx():
+    faq_data = get_faqs_for_page('dx')
+    return render_template('sprunki-dx.html',
+                         page_title='Sprunki DX',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-banana')
 def sprunki_banana():
     faq_data = get_faqs_for_page('banana')

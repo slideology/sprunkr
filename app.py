@@ -229,6 +229,24 @@ def sprunki_angry():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-phase-777-3-7')
+def sprunki_phase_777_3_7():
+    faq_data = get_faqs_for_page('phase-777-3-7')
+    return render_template('sprunki-phase-777-3-7.html',
+                         page_title='Sprunki Phase 777 3.7',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-phase-19-update')
+def sprunki_phase_19_update():
+    faq_data = get_faqs_for_page('phase-19-update')
+    return render_template('sprunki-phase-19-update.html',
+                         page_title='Sprunki Phase 19 Update',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-dx')
 def sprunki_dx():
     faq_data = get_faqs_for_page('dx')

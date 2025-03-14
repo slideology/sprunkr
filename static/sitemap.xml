@@ -150,4 +150,16 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://sprunkr.online/sprunki-phase-777-3-7</loc>
+        <lastmod>2025-03-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sprunkr.online/sprunki-phase-19-update</loc>
+        <lastmod>2025-03-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>

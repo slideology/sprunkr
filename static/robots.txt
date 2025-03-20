@@ -16,6 +16,17 @@ Allow: /sprunki-pyramixed
 Allow: /sprunki-sprunksters
 Allow: /sprunki-agents
 Allow: /sprunki-banana-porridge
+Allow: /sprunki-phase-1-7
+Allow: /sprunki-phase-777-3-7
+Allow: /sprunki-phase-19-update
+Allow: /sprunki-1996
+Allow: /sprunki-shatter
+Allow: /sprunki-grown-up
+Allow: /sprunki-retake-new-human
+Allow: /sprunki-banana
+Allow: /sprunki-angry
+Allow: /sprunki-dx
+Allow: /sprunki-spfundi
 
 # 禁止访问的目录
 Disallow: /api/

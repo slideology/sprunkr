@@ -162,4 +162,10 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-</urlset>
+    <url>
+        <loc>https://sprunkr.online/sprunki-phase-1-7</loc>
+        <lastmod>2025-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    </urlset>

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki Phase 1.7 New Oc Mod On Sprunkr Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Sprunki Phase 1.7 continues the fan-made storyline established in Phase 1.5, expanding the original universe with new narrative developments.">
+{% endblock %}
+
+{% block og_title %}Sprunki Phase 1.7 New Oc Mod Play On Sprunkr Online{% endblock %}
+{% block og_description %}Sprunki Phase 1.7 continues the fan-made storyline established in Phase 1.5, expanding the original universe with new narrative developments.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-phase-1-7-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/phase-1-7-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/phase-1-7-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunki-phase-1-7/sprunki-phase-1-7.html",
+        title="Sprunki Phase 1 7",
+        description="Sprunki Phase 1.7 continues the fan-made storyline established in Phase 1.5, expanding the original universe with new narrative developments."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    {% with videos=[
+        {'video_id': '6Q67xZDUAXg'}
+    ] %}
+    {% include 'components/trending_videos.html' %}
+    {% endwith %}
+
+    <!-- Trending Games Section -->
+    {% with current_page='phase-1-7' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+    
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

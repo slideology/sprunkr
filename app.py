@@ -247,6 +247,15 @@ def sprunki_phase_19_update():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-phase-1-7')
+def sprunki_phase_1_7():
+    faq_data = get_faqs_for_page('phase-1-7')
+    return render_template('sprunki-phase-1-7.html',
+                         page_title='Sprunki Phase 1.7',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-dx')
 def sprunki_dx():
     faq_data = get_faqs_for_page('dx')

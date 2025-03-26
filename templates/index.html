@@ -10,6 +10,19 @@
 {% block og_description %}Sprunkr, A New Sprunki Horror Mod Online, Create unique horror compositions, experience spine-chilling sound effects, and immerse yourself on sprunkr online{% endblock %}
 
 
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunki-upin-ipin/sprunki-upin-ipin.html",
+        title="Sprunki Sprunkr",
+        description="Sprunkr, A New Sprunki Horror Mod Online, Create unique horror compositions, experience spine-chilling sound effects, and immerse yourself on sprunkr online"
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
 
     <!-- Adsterra Native Banner Ad 
     <div class="container mx-auto px-4 py-8">

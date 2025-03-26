@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki Upin Ipin Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Explore Sprunki Upin Ipin: Merge Upin & Ipin Fun with Interactive Music Creation Tools. Compose, Share & Enjoy Free Musical Adventures!">
+{% endblock %}
+
+{% block og_title %}Sprunki Upin Ipin Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Explore Sprunki Upin Ipin: Merge Upin & Ipin Fun with Interactive Music Creation Tools. Compose, Share & Enjoy Free Musical Adventures!{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-upin-ipin-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/phase-777-3-7-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/phase-777-3-7-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunki-upin-ipin/sprunki-upin-ipin.html",
+        title="Sprunki Upin Ipin",
+        description="Explore Sprunki Upin Ipin: Merge Upin & Ipin Fun with Interactive Music Creation Tools. Compose, Share & Enjoy Free Musical Adventures!"
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Trending Games Section -->
+    {% with current_page='upin-ipin' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

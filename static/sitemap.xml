@@ -168,4 +168,16 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://sprunkr.online/sprunki-upin-ipin</loc>
+        <lastmod>2025-03-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://sprunkr.online/sprunki-ultimate-deluxe</loc>
+        <lastmod>2025-03-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
     </urlset>

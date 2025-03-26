@@ -238,6 +238,24 @@ def sprunki_phase_777_3_7():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-upin-ipin')
+def sprunki_upin_ipin():
+    faq_data = get_faqs_for_page('upin-ipin')
+    return render_template('sprunki-upin-ipin.html',
+                         page_title='Sprunki Upin Ipin',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-ultimate-deluxe')
+def sprunki_ultimate_deluxe():
+    faq_data = get_faqs_for_page('ultimate-deluxe')
+    return render_template('sprunki-ultimate-deluxe.html',
+                         page_title='Sprunki Ultimate Deluxe',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-phase-19-update')
 def sprunki_phase_19_update():
     faq_data = get_faqs_for_page('phase-19-update')

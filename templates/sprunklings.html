@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunklings New Oc Mod Play On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Sprunklings: Where adorable magic meets exploration! Solve mysteries using their special abilities across breathtaking hand-crafted environments.">
+{% endblock %}
+
+{% block og_title %}Sprunklings New Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Sprunklings: Where adorable magic meets exploration! Solve mysteries using their special abilities across breathtaking hand-crafted environments.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunklings-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/sprunklings-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/sprunklings-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://s.sprunkiscrunkly.com/games/sprunklings/sprunklings.html",
+        title="Sprunklings",
+        description="Sprunklings: Where adorable magic meets exploration! Solve mysteries using their special abilities across breathtaking hand-crafted environments."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Trending Games Section -->
+    {% with current_page='sprunklings' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

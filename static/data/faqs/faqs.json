@@ -413,7 +413,62 @@
     ],
     "conclusion": "Sprunki Ultimate Deluxe offers thrilling puzzle challenges through strategic placement of vibrant sprinkis - colorful creatures with special powers enabling dynamic problem-solving gameplay."
 },
-"retake-but-human": {
+"sprunklings": {
+    "faqs": [
+        
+
+        {
+            "question": "What are Sprunklings?",
+            "answer": "Sprunklings are magical creatures with unique abilities that help players solve puzzles and complete quests in a hand-painted enchanted world."
+            },
+            {
+            "question": "How do I play Sprunklings?",
+            "answer": "Select Sprunklings with diverse abilities, combine their powers strategically to solve environmental puzzles, and progress through quests in a magical adventure."
+            },
+            {
+            "question": "What makes Sprunklings special?",
+            "answer": "A blend of puzzle-solving and magical adventure with dynamic hand-painted environments, where each Sprunkling’s ability impacts gameplay outcomes."
+            },
+            {
+            "question": "Do I need gaming experience for Sprunklings?",
+            "answer": "No! The game features an intuitive interface for accessibility, while offering depth for experienced players through strategic creature combinations."
+            },
+            {
+            "question": "What's included in Sprunklings?",
+            "answer": "Diverse magical creatures, unique abilities, interactive puzzles, and beautiful hand-painted environments that evolve based on player choices."
+            },
+            {
+            "question": "Where can I find more Sprunklings content?",
+            "answer": "Join the community to share strategies, connect with fellow adventurers, and stay updated on new features and challenges."
+            },
+            {
+            "question": "Is there a cost for Sprunklings?",
+            "answer": "Sprunklings is completely free to play, with no hidden costs or subscriptions required."
+            },
+            {
+            "question": "How do Sprunklings' abilities impact gameplay?",
+            "answer": "Each Sprunkling has specialized powers (e.g., teleportation, element manipulation) that must be combined strategically to overcome obstacles and solve puzzles."
+            },
+            {
+            "question": "What is the objective of Sprunklings?",
+            "answer": "Solve increasingly complex puzzles, help other Sprunklings, and unlock secrets to progress through the enchanted world."
+            },
+            {
+            "question": "Can I customize my Sprunklings team?",
+            "answer": "Yes! Choose from a diverse roster of Sprunklings and tailor your team to match puzzle requirements using their unique abilities."
+            },
+            {
+            "question": "What visual elements define Sprunklings?",
+            "answer": "Beautiful hand-painted environments and animated Sprunklings that respond dynamically to strategic choices, creating an immersive magical experience."
+            },
+            {
+            "question": "What inspired the development of Sprunklings?",
+            "answer": "A desire to transform traditional puzzle-solving into a magical adventure, blending strategic thinking with creative storytelling and art."
+            }
+        ],
+        "conclusion": "Sprunklings: Where adorable magic meets exploration! Solve mysteries using their special abilities across breathtaking hand-crafted environments."
+    },
+    "retake-but-human": {
     "faqs": [
         {
             "question": "What is Retake But Human mod?",
@@ -445,6 +500,60 @@
         }
     ],
     "conclusion": "Experience Sprunki characters in a whole new light with the Retake But Human mod."
+},
+"sprunki-swap-retextured": {
+    "faqs": [
+        
+{
+    "question": "What is Sprunki Swap Retextured?",
+    "answer": "Sprunki Swap Retextured is a revolutionary mod blending turn-based strategy with rhythm mechanics, set in a post-apocalyptic universe. Players command musically-enhanced Sprunki units, time actions to beats, and swap characters dynamically for tactical advantages."
+    },
+    {
+    "question": "What defines Sprunki Swap Retextured's gameplay?",
+    "answer": "Key mechanics include:\n- **Rhythmic Command System**: Timing actions to musical beats for bonuses.\n- **Dynamic Character Swapping**: Mid-battle unit rotations to exploit rhythm patterns.\n- **Tactical Beat Mapping**: Strategic planning aligned with musical cues."
+    },
+    {
+    "question": "What visual improvements does the retextured version offer?",
+    "answer": "The mod features vibrant new character designs, dynamic battlefield environments, and special visual effects synchronized with gameplay beats for an immersive audio-visual experience."
+    },
+    {
+    "question": "How do Sprunki units differ in Sprunki Swap Retextured?",
+    "answer": "Units like Beat Keepers (control tempo), Harmony Weavers (combo abilities), and Rhythm Strikers (timed damage) offer specialized rhythmic roles to create strategic combos."
+    },
+    {
+    "question": "Do I need musical experience to play Sprunki Swap Retextured?",
+    "answer": "No! The game is accessible to all players, with intuitive rhythm mechanics that cater to both casual gamers and music enthusiasts."
+    },
+    {
+    "question": "What multiplayer features are planned?",
+    "answer": "While currently single-player, competitive rhythm battles are in development, promising future multiplayer strategic rhythm challenges."
+    },
+    {
+    "question": "How does the environment interact with gameplay?",
+    "answer": "Battlefields feature interactive musical elements and environments that respond to rhythm, adapting to player actions for dynamic gameplay."
+    },
+    {
+    "question": "What inspired Sprunki Swap Retextured's development?",
+    "answer": "The mod evolved from standard strategy roots when developer WFGoliNagiev introduced rhythm mechanics, drawing inspiration from Incredibox while creating a unique identity."
+    },
+    {
+    "question": "How often is the game updated?",
+    "answer": "The team regularly adds new Sprunki characters, musical tracks, and gameplay features to keep the experience fresh."
+    },
+    {
+    "question": "What difficulty levels are available?",
+    "answer": "Sprunki Swap Retextured offers multiple difficulty settings, accommodating both beginners and experienced players."
+    },
+    {
+    "question": "What makes Sprunki Swap Retextured stand out?",
+    "answer": "Its unique fusion of rhythm and strategy, combined with a visual overhaul and dynamic character swapping, redefines tactical gameplay with musical depth."
+    },
+    {
+    "question": "How do upgrades work in Sprunki Swap Retextured?",
+    "answer": "Players enhance Sprunkis' musical and combat capabilities through strategic upgrades, unlocking new abilities and optimizing performance."
+    }
+    ],
+    "conclusion": "Sprunki Swap Retextured merges tactical combat with rhythmic beats in a post-apocalyptic world master strategic planning & music sync in this revolutionary mod!"
 },
 "sprunksters": {
     "faqs": [

@@ -150,7 +150,7 @@ def ads_txt():
 
 @app.route('/sprunki-lily')
 def sprunki_lily():
-    faq_data = get_faqs_for_page('lily')
+    faq_data = get_faqs_for_page('sprunki-lily')
     return render_template('sprunki-lily.html',
                          page_title='Sprunki Lily',
                          dynamic_faqs=faq_data['faqs'],
@@ -160,7 +160,7 @@ def sprunki_lily():
 @app.route('/sprunki-1996')
 def sprunki_1996():
     """Sprunki 1996游戏页面路由"""
-    faq_data = get_faqs_for_page('1996')
+    faq_data = get_faqs_for_page('sprunki-1996')
     return render_template('sprunki-1996.html',
                           page_title='Sprunki 1996',
                           dynamic_faqs=faq_data['faqs'],
@@ -169,7 +169,7 @@ def sprunki_1996():
 
 @app.route('/sprunki-shatter')
 def sprunki_shatter():
-    faq_data = get_faqs_for_page('shatter')
+    faq_data = get_faqs_for_page('sprunki-shatter')
     return render_template('sprunki-shatter.html',
                          page_title='Sprunki Shatter',
                          dynamic_faqs=faq_data['faqs'],
@@ -178,7 +178,7 @@ def sprunki_shatter():
 
 @app.route('/sprunki-fiddlebops')
 def sprunki_fiddlebops():
-    faq_data = get_faqs_for_page('fiddlebops')
+    faq_data = get_faqs_for_page('sprunki-fiddlebops')
     return render_template('sprunki-fiddlebops.html',
                          page_title='Sprunki Fiddlebops',
                          dynamic_faqs=faq_data['faqs'],
@@ -187,7 +187,7 @@ def sprunki_fiddlebops():
 
 @app.route('/sprunki-megalovania')
 def sprunki_megalovania():
-    faq_data = get_faqs_for_page('megalovania')
+    faq_data = get_faqs_for_page('sprunki-megalovania')
     return render_template('sprunki-megalovania.html',
                          page_title='Sprunki Megalovania',
                          dynamic_faqs=faq_data['faqs'],
@@ -196,7 +196,7 @@ def sprunki_megalovania():
 
 @app.route('/sprunki-sprunkr')
 def sprunki_sprunkr():
-    faq_data = get_faqs_for_page('sprunkr')
+    faq_data = get_faqs_for_page('sprunki-sprunkr')
     return render_template('sprunki-sprunkr.html',
                          page_title='Sprunkr',
                          dynamic_faqs=faq_data['faqs'],
@@ -205,7 +205,7 @@ def sprunki_sprunkr():
 
 @app.route('/sprunki-spruted')
 def sprunki_spruted():
-    faq_data = get_faqs_for_page('spruted')
+    faq_data = get_faqs_for_page('sprunki-spruted')
     return render_template('sprunki-spruted.html',
                          page_title='Sprunki Spruted',
                          dynamic_faqs=faq_data['faqs'],
@@ -213,7 +213,7 @@ def sprunki_spruted():
                          translations=get_translations())
 @app.route('/sprunki-spfundi')
 def sprunki_spfundi():
-    faq_data = get_faqs_for_page('spfundi')
+    faq_data = get_faqs_for_page('sprunki-spfundi')
     return render_template('sprunki-spfundi.html',
                          page_title='Sprunki Spfundi',
                          dynamic_faqs=faq_data['faqs'],
@@ -222,7 +222,7 @@ def sprunki_spfundi():
 
 @app.route('/sprunki-angry')
 def sprunki_angry():
-    faq_data = get_faqs_for_page('angry')
+    faq_data = get_faqs_for_page('sprunki-angry')
     return render_template('sprunki-angry.html',
                          page_title='Sprunki Angry',
                          dynamic_faqs=faq_data['faqs'],
@@ -231,16 +231,34 @@ def sprunki_angry():
 
 @app.route('/sprunki-phase-777-3-7')
 def sprunki_phase_777_3_7():
-    faq_data = get_faqs_for_page('phase-777-3-7')
+    faq_data = get_faqs_for_page('sprunki-phase-777-3-7')
     return render_template('sprunki-phase-777-3-7.html',
                          page_title='Sprunki Phase 777 3.7',
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunklings')
+def sprunklings():
+    faq_data = get_faqs_for_page('sprunki-sprunklings')
+    return render_template('sprunklings.html',
+                         page_title='Sprunklings',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-swap-retextured')
+def sprunki_swap_retextured():
+    faq_data = get_faqs_for_page('sprunki-swap-retextured')
+    return render_template('sprunki-swap-retextured.html',
+                         page_title='Sprunki Swap Retextured',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-upin-ipin')
 def sprunki_upin_ipin():
-    faq_data = get_faqs_for_page('upin-ipin')
+    faq_data = get_faqs_for_page('sprunki-upin-ipin')
     return render_template('sprunki-upin-ipin.html',
                          page_title='Sprunki Upin Ipin',
                          dynamic_faqs=faq_data['faqs'],
@@ -249,7 +267,7 @@ def sprunki_upin_ipin():
 
 @app.route('/sprunki-ultimate-deluxe')
 def sprunki_ultimate_deluxe():
-    faq_data = get_faqs_for_page('ultimate-deluxe')
+    faq_data = get_faqs_for_page('sprunki-ultimate-deluxe')
     return render_template('sprunki-ultimate-deluxe.html',
                          page_title='Sprunki Ultimate Deluxe',
                          dynamic_faqs=faq_data['faqs'],
@@ -258,7 +276,7 @@ def sprunki_ultimate_deluxe():
 
 @app.route('/sprunki-phase-19-update')
 def sprunki_phase_19_update():
-    faq_data = get_faqs_for_page('phase-19-update')
+    faq_data = get_faqs_for_page('sprunki-phase-19-update')
     return render_template('sprunki-phase-19-update.html',
                          page_title='Sprunki Phase 19 Update',
                          dynamic_faqs=faq_data['faqs'],
@@ -267,7 +285,7 @@ def sprunki_phase_19_update():
 
 @app.route('/sprunki-phase-1-7')
 def sprunki_phase_1_7():
-    faq_data = get_faqs_for_page('phase-1-7')
+    faq_data = get_faqs_for_page('sprunki-phase-1-7')
     return render_template('sprunki-phase-1-7.html',
                          page_title='Sprunki Phase 1.7',
                          dynamic_faqs=faq_data['faqs'],
@@ -276,7 +294,7 @@ def sprunki_phase_1_7():
 
 @app.route('/sprunki-dx')
 def sprunki_dx():
-    faq_data = get_faqs_for_page('dx')
+    faq_data = get_faqs_for_page('sprunki-dx')
     return render_template('sprunki-dx.html',
                          page_title='Sprunki DX',
                          dynamic_faqs=faq_data['faqs'],
@@ -285,7 +303,7 @@ def sprunki_dx():
 
 @app.route('/sprunki-banana')
 def sprunki_banana():
-    faq_data = get_faqs_for_page('banana')
+    faq_data = get_faqs_for_page('sprunki-banana')
     return render_template('sprunki-banana.html',
                          page_title='Sprunki Banana',
                          dynamic_faqs=faq_data['faqs'],
@@ -294,7 +312,7 @@ def sprunki_banana():
 
 @app.route('/sprunki-garnold')
 def sprunki_garnold():
-    faq_data = get_faqs_for_page('garnold')
+    faq_data = get_faqs_for_page('sprunki-garnold')
     return render_template('sprunki-garnold.html',
                          page_title='Sprunki Garnold',
                          dynamic_faqs=faq_data['faqs'],
@@ -303,7 +321,7 @@ def sprunki_garnold():
 
 @app.route('/sprunki-ketchup')
 def sprunki_ketchup():
-    faq_data = get_faqs_for_page('ketchup')
+    faq_data = get_faqs_for_page('sprunki-ketchup')
     return render_template('sprunki-ketchup.html',
                          page_title='Sprunki Ketchup',
                          dynamic_faqs=faq_data['faqs'],
@@ -312,7 +330,7 @@ def sprunki_ketchup():
 
 @app.route('/sprunki-sprunksters')
 def sprunki_sprunksters():
-    faq_data = get_faqs_for_page('sprunksters')
+    faq_data = get_faqs_for_page('sprunki-sprunksters')
     return render_template('sprunki-sprunksters.html',
                          page_title='Sprunki Sprunksters',
                          dynamic_faqs=faq_data['faqs'],
@@ -320,7 +338,7 @@ def sprunki_sprunksters():
                          translations=get_translations())
 @app.route('/sprunki-agents')
 def sprunki_agents():
-    faq_data = get_faqs_for_page('agents')
+    faq_data = get_faqs_for_page('sprunki-agents')
     return render_template('sprunki-agents.html',
                          page_title='Sprunki Agents',
                          dynamic_faqs=faq_data['faqs'],
@@ -328,7 +346,7 @@ def sprunki_agents():
                          translations=get_translations())
 @app.route('/sprunki-banana-porridge')
 def sprunki_banana_porridge():
-    faq_data = get_faqs_for_page('banana-porridge')
+    faq_data = get_faqs_for_page('sprunki-banana-porridge')
     return render_template('sprunki-banana-porridge.html',
                          page_title='Sprunki Banana Porridge',
                          dynamic_faqs=faq_data['faqs'],
@@ -336,7 +354,7 @@ def sprunki_banana_porridge():
                          translations=get_translations())
 @app.route('/sprunki-retake-but-human')
 def sprunki_retake_but_human():
-    faq_data = get_faqs_for_page('retake-but-human')
+    faq_data = get_faqs_for_page('sprunki-retake-but-human')
     return render_template('sprunki-retake-but-human.html',
                          page_title='Sprunki Retake But Human',
                          dynamic_faqs=faq_data['faqs'],
@@ -344,7 +362,7 @@ def sprunki_retake_but_human():
                          translations=get_translations())
 @app.route('/sprunki-retake-new-human')
 def sprunki_retake_new_human():
-    faq_data = get_faqs_for_page('retake-new-human')
+    faq_data = get_faqs_for_page('sprunki-retake-new-human')
     return render_template('sprunki-retake-new-human.html',
                          page_title='Sprunki Retake New Human',
                          dynamic_faqs=faq_data['faqs'],
@@ -352,7 +370,7 @@ def sprunki_retake_new_human():
                          translations=get_translations())
 @app.route('/sprunki-grown-up')
 def sprunki_grown_up():
-    faq_data = get_faqs_for_page('grown-up')
+    faq_data = get_faqs_for_page('sprunki-grown-up')
     return render_template('sprunki-grown-up.html',
                          page_title='Sprunki Grown Up',
                          dynamic_faqs=faq_data['faqs'],
@@ -361,7 +379,7 @@ def sprunki_grown_up():
 
 @app.route('/sprunki-parodybox')
 def sprunki_parodybox():
-    faq_data = get_faqs_for_page('parodybox')
+    faq_data = get_faqs_for_page('sprunki-parodybox')
     return render_template('sprunki-parodybox.html',
                          page_title='Sprunki ParodyBox',
                          dynamic_faqs=faq_data['faqs'],
@@ -370,7 +388,7 @@ def sprunki_parodybox():
 
 @app.route('/sprunki-pyramixed')
 def sprunki_pyramixed():
-    faq_data = get_faqs_for_page('pyramixed')
+    faq_data = get_faqs_for_page('sprunki-pyramixed')
     return render_template('sprunki-pyramixed.html',
                          page_title='Sprunki PyraMixed',
                          dynamic_faqs=faq_data['faqs'],

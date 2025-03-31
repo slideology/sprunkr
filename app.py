@@ -185,6 +185,15 @@ def sprunki_fiddlebops():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunka')
+def sprunka():
+    faq_data = get_faqs_for_page('sprunka')
+    return render_template('sprunka.html',
+                         page_title='Sprunka',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-megalovania')
 def sprunki_megalovania():
     faq_data = get_faqs_for_page('sprunki-megalovania')
@@ -199,6 +208,15 @@ def sprunki_sprunkr():
     faq_data = get_faqs_for_page('sprunki-sprunkr')
     return render_template('sprunki-sprunkr.html',
                          page_title='Sprunkr',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-brud-edition-finale')
+def sprunki_brud_edition_finale():
+    faq_data = get_faqs_for_page('sprunki-brud-edition-finale')
+    return render_template('sprunki-brud-edition-finale.html',
+                         page_title='Sprunki Brud Edition Finale',
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())

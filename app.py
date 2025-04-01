@@ -194,6 +194,15 @@ def sprunka():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-pyramixed-regretful')
+def sprunki_pyramixed_regretful():
+    faq_data = get_faqs_for_page('sprunki-pyramixed-regretful')
+    return render_template('sprunki-pyramixed-regretful.html',
+                         page_title='Sprunki Pyramixed Regretful',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-megalovania')
 def sprunki_megalovania():
     faq_data = get_faqs_for_page('sprunki-megalovania')

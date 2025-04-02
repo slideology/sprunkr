@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 
-{% block title %}Sprunki Retake Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block title %}Sprunki Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
 
 {% block meta_description %}
 <meta name="description" content="Sprunkr, A New Sprunki Horror Mod Online, Create unique horror compositions, experience spine-chilling sound effects, and immerse yourself on sprunkr online">
 {% endblock %}
 
-{% block og_title %}Sprunki Retake Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_title %}Sprunki Sprunkr Oc Mod Play On Sprunkr.Online{% endblock %}
 {% block og_description %}Sprunkr, A New Sprunki Horror Mod Online, Create unique horror compositions, experience spine-chilling sound effects, and immerse yourself on sprunkr online{% endblock %}
 
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/sprunki-sprunkr.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/sprunki-sprunkr-apple-touch-icon.png') }}">
+{% endblock %}
 
 {% block content %}
 <div class="relative overflow-hidden">

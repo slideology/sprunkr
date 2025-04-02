@@ -194,6 +194,33 @@ def sprunka():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-phase-6-definitive-all-alive')
+def sprunki_phase_6_definitive_all_alive():
+    faq_data = get_faqs_for_page('sprunki-phase-6-definitive-all-alive')
+    return render_template('sprunki-phase-6-definitive-all-alive.html',
+                         page_title='Sprunki Phase 6 Definitive All Alive',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-phase-6-definitive-remaster')
+def sprunki_phase_6_definitive_remaster():
+    faq_data = get_faqs_for_page('sprunki-phase-6-definitive-remaster')
+    return render_template('sprunki-phase-6-definitive-remaster.html',
+                         page_title='Sprunki Phase 6 Definitive Remaster',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-phase-6-definitive')
+def sprunki_phase_6_definitive():
+    faq_data = get_faqs_for_page('sprunki-phase-6-definitive')
+    return render_template('sprunki-phase-6-definitive.html',
+                         page_title='Sprunki Phase 6 Definitive',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-sploinkers')
 def sprunki_sploinkers():
     faq_data = get_faqs_for_page('sprunki-sploinkers')

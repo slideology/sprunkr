@@ -234,4 +234,10 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://sprunkr.online/incredibox-rainbow-animal</loc>
+        <lastmod>2025-04-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
     <urlset>

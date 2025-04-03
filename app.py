@@ -185,6 +185,24 @@ def sprunki_fiddlebops():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/incredibox-rainbow-animal')
+def incredibox_rainbow_animal():
+    faq_data = get_faqs_for_page('incredibox-rainbow-animal')
+    return render_template('incredibox-rainbow-animal.html',
+                         page_title='Incredibox Rainbow Animal',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/incredibox-irrelevant-reunion')
+def incredibox_irrelevant_reunion():
+    faq_data = get_faqs_for_page('incredibox-irrelevant-reunion')
+    return render_template('incredibox-irrelevant-reunion.html',
+                         page_title='Incredibox Irrelevant Reunion',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunka')
 def sprunka():
     faq_data = get_faqs_for_page('sprunka')

@@ -203,6 +203,15 @@ def incredibox_irrelevant_reunion():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-pyramixed-melophobia')
+def sprunki_pyramixed_melophobia():
+    faq_data = get_faqs_for_page('sprunki-pyramixed-melophobia')
+    return render_template('sprunki-pyramixed-melophobia.html',
+                         page_title='Sprunki Pyramixed Melophobia',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-misfismix')
 def sprunki_misfismix():
     faq_data = get_faqs_for_page('sprunki-misfismix')

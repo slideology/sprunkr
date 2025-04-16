@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki Pyramixed Melophobia Mod Play On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Sprunki Pyramixed Melophobia Mod: Experience a deep, emotional remix of Sprunki with haunting visuals and abstract sound design inspired by the fear of music.">
+{% endblock %}
+
+{% block og_title %}Sprunki Pyramixed Melophobia Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Sprunki Pyramixed Melophobia Mod: Experience a deep, emotional remix of Sprunki with haunting visuals and abstract sound design inspired by the fear of music.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-pyramixed-melophobia-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/sprunki-pyramixed-melophobia.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/sprunki-pyramixed-melophobia-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://wowtbc.net/sprunkin/pyramix-melohpio/index.html",
+        title="Sprunki Pyramixed Melophobia",
+        description="Sprunki Pyramixed Melophobia: Experience a deep, emotional remix of Sprunki with haunting visuals and abstract sound design inspired by the fear of music."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Trending Games Section -->
+    {% with current_page='sprunki-pyramixed-melophobia' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

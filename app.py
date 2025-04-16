@@ -203,6 +203,15 @@ def incredibox_irrelevant_reunion():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-misfismix')
+def sprunki_misfismix():
+    faq_data = get_faqs_for_page('sprunki-misfismix')
+    return render_template('sprunki-misfismix.html',
+                         page_title='Sprunki Misfismix',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunka')
 def sprunka():
     faq_data = get_faqs_for_page('sprunka')

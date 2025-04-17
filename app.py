@@ -194,6 +194,24 @@ def incredibox_rainbow_animal():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-pyramixed-ultimate-deluxe')
+def sprunki_pyramixed_ultimate_deluxe():
+    faq_data = get_faqs_for_page('sprunki-pyramixed-ultimate-deluxe')
+    return render_template('sprunki-pyramixed-ultimate-deluxe.html',
+                         page_title='Sprunki Pyramixed Ultimate Deluxe',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/sprunki-chaotic-good')
+def sprunki_chaotic_good():
+    faq_data = get_faqs_for_page('sprunki-chaotic-good')
+    return render_template('sprunki-chaotic-good.html',
+                         page_title='Sprunki Chaotic Good',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/incredibox-irrelevant-reunion')
 def incredibox_irrelevant_reunion():
     faq_data = get_faqs_for_page('incredibox-irrelevant-reunion')

@@ -194,6 +194,15 @@ def incredibox_rainbow_animal():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-wenda-edition')
+def sprunki_wenda_edition():
+    faq_data = get_faqs_for_page('sprunki-wenda-edition')
+    return render_template('sprunki-wenda-edition.html',
+                         page_title='Sprunki Wenda Edition',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunki-pyramixed-ultimate-deluxe')
 def sprunki_pyramixed_ultimate_deluxe():
     faq_data = get_faqs_for_page('sprunki-pyramixed-ultimate-deluxe')

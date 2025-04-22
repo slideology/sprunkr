@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Sprunki Wenda Edition Sprunki Oc Mod Play On Sprunkr.Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Sprunki Wenda Edition is a fan concept or mod exploring character Wenda within the Sprunki/Incredibox universe, potentially linked to her role in Horror Mode.">
+{% endblock %}
+
+{% block og_title %}Sprunki Wenda Edition Sprunki Oc Mod Play On Sprunkr.Online{% endblock %}
+{% block og_description %}Explore Sprunki Wenda Edition: A fan concept or mod exploring character Wenda within the Sprunki/Incredibox universe, potentially linked to her role in Horror Mode.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/sprunki-wenda-edition-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/sprunki-wenda-edition.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/sprunki-wenda-edition-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://scratch.mit.edu/projects/1162014804/embed",
+        title="Sprunki Wenda Edition",
+        description="Explore Sprunki Wenda Edition: A fan concept or mod exploring character Wenda within the Sprunki/Incredibox universe, potentially linked to her role in Horror Mode."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Trending Games Section -->
+    {% with current_page='sprunki-wenda-edition' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

@@ -1384,7 +1384,7 @@
     "faqs": [
         
 
-        [
+        
             {
               "question": "What is Sprunki Wenda Edition?",
               "answer": "Sprunki Wenda Edition is a fan-made concept, mod, or specific focus within the popular 'Sprunki' Incredibox mod. It likely revolves around the character Wenda, perhaps exploring her story, appearance, or sounds in a unique way, possibly tied to her role in the Horror Mode."
@@ -1412,8 +1412,7 @@
             {
               "question": "Where can I find fan-made Sprunki content about Wenda?",
               "answer": "You can often find fan-made Sprunki mods and content about Wenda on Sprunki-focused websites, Fandom wikis dedicated to Sprunki phases or fanon, and community platforms like the r/Sprunki subreddit."
-            }
-          ]
+            } 
     ],
     "conclusion": "Sprunki Wenda Edition: Explore a fan concept or mod focused on character Wenda within the Sprunki/Incredibox universe, potentially linked to her role in Horror Mode."
 },

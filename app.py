@@ -336,11 +336,21 @@ def sprunki_spruted():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+
 @app.route('/sprunki-spfundi')
 def sprunki_spfundi():
     faq_data = get_faqs_for_page('sprunki-spfundi')
     return render_template('sprunki-spfundi.html',
                          page_title='Sprunki Spfundi',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
+@app.route('/yet-another-boring-old-sprunki-mod')
+def yet_another_boring_old_sprunki_mod():
+    faq_data = get_faqs_for_page('yet-another-boring-old-sprunki-mod')
+    return render_template('yet-another-boring-old-sprunki-mod.html',
+                         page_title='Yet Another Boring Old Sprunki Mod',
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())

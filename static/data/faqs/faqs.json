@@ -91,6 +91,35 @@
     ],
     "conclusion": "Yet Another Boring Old Sprunki Mod is a unique and challenging turn-based strategy game that offers a deep and rewarding experience for both casual and competitive players."
   },
+  "internet-roadtrip": {
+    "faqs": [
+        {
+            "question": "What is Internet Roadtrip?",
+            "answer": "Internet Roadtrip is a quirky and chill multiplayer game where you embark on a virtual road trip through actual places using Google Street View. You join up with strangers online, and together, you decide where the car goes next by voting!"
+          },
+          {
+            "question": "Tell me about the voting system in Internet Roadtrip.",
+            "answer": "The core of the gameplay is the voting. Every 10 seconds, the group of players gets to vote on which direction to take the virtual car – left, right, forward, or make a U-turn. The majority vote determines the next move."
+          },
+          {
+            "question": "What key features should I know about Internet Roadtrip?",
+            "answer": "Key features include exploring the real world via Google Street View, navigating collectively through mass multiplayer voting, the thrill of surprise turns with no set route, background tunes from a Retro FM Radio, and a Live Location Map to track your journey."
+          },
+          {
+            "question": "How is the experience different each time you play?",
+            "answer": "Because there's no map or set route, and the AI is dynamic, every single playthrough of Internet Roadtrip is unique. The path you take, the discoveries you make, and the people you're with will always create a different journey."
+          },
+          {
+            "question": "Who is Internet Roadtrip good for?",
+            "answer": "Internet Roadtrip has something for everyone! Its unique blend of simple controls, real-world exploration, and social interaction makes it appealing to both long-time gamers and those new to playing online."
+          },
+          {
+            "question": "Do you explore alone or with others?",
+            "answer": "You explore with others! Internet Roadtrip is a mass multiplayer game where you're in a virtual car with strangers online, and everyone votes together to decide the path."
+          }
+    ],
+    "conclusion": "Internet Roadtrip: Explore the world with friends! This quirky multiplayer game uses Google Street View for unique adventures. Experience the joy!"
+  },
   "sprunki-idle-clicker": {
     "faqs": [
         {

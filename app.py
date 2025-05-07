@@ -355,6 +355,14 @@ def yet_another_boring_old_sprunki_mod():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/sprunki-idle-clicker')
+def sprunki_idle_clicker():
+    faq_data = get_faqs_for_page('sprunki-idle-clicker')
+    return render_template('sprunki-idle-clicker.html',
+                         page_title='Sprunki Idle Clicker',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/sprunki-angry')
 def sprunki_angry():
     faq_data = get_faqs_for_page('sprunki-angry')

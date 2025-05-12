@@ -319,6 +319,22 @@ def sprunki_sprunkr():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/drive-beyond-horizons')
+def drive_beyond_horizons():
+    faq_data = get_faqs_for_page('drive-beyond-horizons')
+    return render_template('drive-beyond-horizons.html',
+                         page_title='Drive Beyond Horizons',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+@app.route('/dreamy-room')
+def dreamy_room():
+    faq_data = get_faqs_for_page('dreamy-room')
+    return render_template('dreamy-room.html',
+                         page_title='Dreamy Room',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/sprunki-brud-edition-finale')
 def sprunki_brud_edition_finale():
     faq_data = get_faqs_for_page('sprunki-brud-edition-finale')

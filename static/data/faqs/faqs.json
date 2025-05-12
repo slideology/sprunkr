@@ -120,6 +120,64 @@
     ],
     "conclusion": "Internet Roadtrip: Explore the world with friends! This quirky multiplayer game uses Google Street View for unique adventures. Experience the joy!"
   },
+  "drive-beyond-horizons": {
+    "faqs": [
+        {
+            "question": "Ready for an off-road odyssey? Tell me about Drive Beyond Horizons.",
+            "answer": "Drive Beyond Horizons is an immersive 3D driving simulation sandbox game with procedurally generated terrains and intense vehicle tuning. Your mission is to explore expansive wild landscapes and upgrade your vehicle to survive extreme weather and terrain challenges."
+          },
+          {
+            "question": "What unique driving modes are available?",
+            "answer": "Drive Beyond Horizons offers four thrilling game modes: you can collide in Derby, outsmart traps in Challenges, cruise with ease in Free Ride, or defy balance in Fall Cars. Each mode provides different challenges for your driving skills."
+          },
+          {
+            "question": "How does vehicle tuning work in Drive Beyond Horizons?",
+            "answer": "The game features a deep vehicle tuning and upgrade system, giving you endless possibilities for vehicle builds. This allows you to customize your car to handle nature's toughest challenges, from sand-blasted deserts to dense forests."
+          },
+          {
+            "question": "What makes the world dynamic in Drive Beyond Horizons?",
+            "answer": "The world is incredibly dynamic with real-time weather and day-night transitions. Terrain can also degrade under sustained combat, ensuring every ride feels fresh, strategic, and packed with high-octane intensity."
+          },
+          {
+            "question": "Can I play Drive Beyond Horizons with friends?",
+            "answer": "Yes, you can! Drive Beyond Horizons includes a multiplayer mode for chaotic competitive fun, letting you test your skills and dominate the road with friends."
+          },
+          {
+            "question": "What kind of challenges will I face in the game?",
+            "answer": "Every journey in Drive Beyond Horizons is a test of survival and skill. You'll need to scavenge resources, battle harsh elements, and adapt to the dynamic environment, whether racing through deserts or winding through forests."
+          }
+    ],
+    "conclusion": "Drive Beyond Horizons: A high-octane driving game! Race across stunning terrain with shifting landscapes, pushing limits in wild environments for thrilling speed."
+  },
+  "dreamy-room": {
+    "faqs": [
+        {
+            "question": "Looking for an addictive home-design game? What is Dreamy Room?",
+            "answer": "Dreamy Room is an addictive room arrangement and home-design game where you dive into the emotional chapters of a virtual life. It's all about organizing treasured belongings and decorating dreamy interiors, revealing heartfelt stories through the objects you place."
+          },
+          {
+            "question": "How does Dreamy Room tell stories?",
+            "answer": "The game tells deeply emotional stories through the objects alone! As you unpack boxes and place items like photo frames and vintage mugs into hand-drawn rooms, echoes of growing up, life transitions, and cherished memories emerge from the objects themselves."
+          },
+          {
+            "question": "Is there any pressure or timers in Dreamy Room?",
+            "answer": "No, absolutely not! Dreamy Room is designed to be stress-free. There are no timers or pressure, allowing you to take your time, find the correct positions for all items, and enjoy a peaceful, reflective experience."
+          },
+          {
+            "question": "Who is Dreamy Room best for?",
+            "answer": "It's ideal for 'Mindful Decorators' who appreciate cozy aesthetics and creative tasks, especially girls. It also appeals to 'Organizing Enthusiasts' who love the calm and joy of sorting and arranging items with care."
+          },
+          {
+            "question": "What kind of rooms do you decorate?",
+            "answer": "You'll decorate a variety of beautifully hand-drawn rooms that represent different stages of a virtual life, ranging from cozy dorm rooms to fully grown-up homes."
+          },
+          {
+            "question": "How is the gameplay experience in Dreamy Room?",
+            "answer": "The gameplay is described as an 'addictive room arrangement' experience. It's intuitive, allowing you to click, drag, and place items, creating a satisfying flow as you uncover stories and bring rooms to life."
+          }
+    ],
+    "conclusion": "Dreamy Room: An interior game where you design a cozy tiny home. Packed with stylish choices, build beauty in every compact corner through clever arrangements."
+  },
   "sprunki-idle-clicker": {
     "faqs": [
         {

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Play Dreamy Room On Sprunkr Online{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Dreamy Room: An interior game where you design a cozy tiny home. Packed with stylish choices, build beauty in every compact corner through clever arrangements.">
+{% endblock %}
+
+{% block og_title %}Play Dreamy Room On Sprunkr Online{% endblock %}
+{% block og_description %}Dreamy Room: An interior game where you design a cozy tiny home. Packed with stylish choices, build beauty in every compact corner through clever arrangements.{% endblock %}
+{% block og_image %}https://sprunkr.online/static/images/games/dreamy-room-preview.png{% endblock %}
+
+{% block favicon %}
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon/dreamy-room-favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/dreamy-room-apple-touch-icon.png') }}">
+{% endblock %}
+
+{% block content %}
+<div class="relative overflow-hidden">
+    {% with 
+        gradient_colors="from-pink-400 via-purple-500 to-indigo-600",
+        blob_gradient_1="from-pink-500 to-purple-500",
+        blob_gradient_2="from-purple-500 to-indigo-500",
+        title_gradient="from-pink-500 via-purple-500 to-indigo-500",
+        game_url="https://html5.gamedistribution.com/rvvASMiM/2752a06ef4f9406cbbe85d3f78096d25/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovLzFnYW1lcy5pby8iLCJwYXJlbnREb21haW4iOiIxZ2FtZXMuaW8iLCJ0b3BEb21haW4iOiIxZ2FtZXMuaW8iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE3In0%253D",
+        title="Dreamy Room",
+        description="Dreamy Room: An interior game where you design a cozy tiny home. Packed with stylish choices, build beauty in every compact corner through clever arrangements."
+    %}
+        {% include 'components/hero.html' %}
+    {% endwith %}
+
+    <!-- Trending Games Section -->
+    {% with current_page='dreamy-room' %}
+    {% include 'components/trending_games.html' %}
+    {% endwith %}
+
+    <!-- FAQ Section -->
+    {% include 'components/faq_section.html' %}
+
+    
+</div>
+{% endblock %}

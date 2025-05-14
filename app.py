@@ -343,6 +343,22 @@ def merge_fellas():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+@app.route('/speed-stars')
+def speed_stars():
+    faq_data = get_faqs_for_page('speed-stars')
+    return render_template('speed-stars.html',
+                         page_title='Speed Stars',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+@app.route('/multi-theme-clicker-game')
+def multi_theme_clicker_game():
+    faq_data = get_faqs_for_page('multi-theme-clicker-game')
+    return render_template('multi-theme-clicker-game.html',
+                         page_title='Multi Theme Clicker Game',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/wacky-flip')
 def wacky_flip():
     faq_data = get_faqs_for_page('wacky-flip')

@@ -367,6 +367,14 @@ def italian_brainrot_2048():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+@app.route('/pokemon-gamma-emerald')
+def pokemon_gamma_emerald():
+    faq_data = get_faqs_for_page('pokemon-gamma-emerald')
+    return render_template('pokemon-gamma-emerald.html',
+                         page_title='Pokemon Gamma Emerald',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/wacky-flip')
 def wacky_flip():
     faq_data = get_faqs_for_page('wacky-flip')

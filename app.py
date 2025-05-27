@@ -148,6 +148,10 @@ def robots():
 def ads_txt():
     return send_from_directory('static', 'ads.txt')
 
+@app.route('/e98cb211bb2b449fa04f59acc629bc6c.txt')
+def indexnow():
+    return send_from_directory('static', 'e98cb211bb2b449fa04f59acc629bc6c.txt')
+
 @app.route('/sprunki-lily')
 def sprunki_lily():
     faq_data = get_faqs_for_page('sprunki-lily')

@@ -352,6 +352,35 @@
     ],
     "conclusion": "Embark on a breathtaking journey in White Horizon, an endless snowboarding game. Explore snowy mountains and alpine forests with stunning visuals."
   },
+  "terradome": {
+    "faqs": [
+      {
+        "question": "What's the unique premise of Terradome?",
+        "answer": "Terradome is a **survival building simulation** that places you on a lifeless planet where your existence depends on how quickly you can **build, upgrade, and expand your oxygen-fueled dome**. Your efforts create the very first spark of life in a dead world, with no outside help."
+      },
+      {
+        "question": "How do you generate life and expand your influence?",
+        "answer": "You must **gather oxygen** and **mine vital resources**. By upgrading your dome, you expand your control and literally engineer life, transforming the dead world into a thriving biosphere through smart strategy, determination, and continuous growth."
+      },
+      {
+        "question": "Are there enemies in Terradome?",
+        "answer": "Yes, as your zone expands, **mysterious life forms** will challenge your efforts. You'll need to use your **blaster to defend** your dome and simultaneously grind to boost your material collection."
+      },
+      {
+        "question": "What kind of progression does Terradome offer?",
+        "answer": "Terradome features **planetary conquest mechanics**, allowing you to unlock and explore **multiple planets** with unique layouts and escalating threats. It's an **incremental building sim** where every conquered world opens a greater frontier for you."
+      },
+      {
+        "question": "How does the game handle resource management?",
+        "answer": "Resource management is crucial. You must **gather oxygen and mine vital resources** to survive. Upgrades directly improve your **resource output**, allowing for peak efficiency as you defend and expand."
+      },
+      {
+        "question": "Is Terradome a complex game to control?",
+        "answer": "Controlling Terradome is designed to be simple: you move a virtual cursor to navigate. The game automatically handles crafting, collecting, and building, letting you focus on the grand strategy of igniting evolution across the galaxy."
+      }
+    ],
+    "conclusion": "Terradome: A thrilling survival building sim! Build, upgrade, and expand your oxygen-fueled dome to create the first spark of life in a dead world."
+  },
   "speed-stars": {
     "faqs": [
         {

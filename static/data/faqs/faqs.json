@@ -28,7 +28,35 @@
     ],
     "conclusion": "Sprunki Banana offers a delightful and tropical musical experience that stands out in the Sprunki universe."
   },
-
+"golf-hit": {
+    "faqs": [
+      {
+        "question": "How does Golf Hit challenge players?",
+        "answer": "Golf Hit challenges players to become a golf king by hitting the ball as far as possible, with the ultimate goal of reaching Mars, all in just one shot! It’s an entertaining golf simulator that tests your timing and precision with every swing."
+      },
+      {
+        "question": "What are the core mechanics of hitting the ball?",
+        "answer": "The core mechanics involve a single tap or click of the left mouse button. You tap to set the perfect shot angle, then release to hit the ball. Mastering this timing and aiming for that ideal angle is key to launching the ball the longest distance possible."
+      },
+      {
+        "question": "How do you progress and get stronger hits?",
+        "answer": "You progress by earning coins for every shot, especially for excellent ones like **birdies, eagles, and albatrosses**. These coins are then used to buy **upgrades** for your golfer's strength, the ball's speed, and its bounce, which collectively make your ball fly much farther."
+      },
+      {
+        "question": "Can I customize my golfer's appearance?",
+        "answer": "Yes, Golf Hit allows for customization! You can unlock a variety of **golfer skins** when you reach specific distance milestones. These skins range from animals like a cat or a lion in beach shorts to characters like a samurai or Santa."
+      },
+      {
+        "question": "Does Golf Hit have a fun or relaxing feel?",
+        "answer": "Yes, the game offers so much fun and relaxing moments! It's designed to be entertaining and may keep you hooked for hours as you aim to hit the ball farther and farther, overcoming obstacles along the course."
+      },
+      {
+        "question": "What obstacles will I face trying to hit the ball far?",
+        "answer": "You'll encounter various obstacles designed to make long hits challenging, such as bunkers, water hazards, trees, and even houses. You'll need to factor these into your aiming and shot power."
+      }
+    ],
+    "conclusion": "Golf Hit is a fun and relaxing golf simulator that challenges players to hit the ball as far as possible."
+  },
   "sprunki-ketchup": {
     "faqs": [
       {

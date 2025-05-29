@@ -252,6 +252,15 @@ def sprunki_misfismix():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/golf-hit')
+def golf_hit():
+    faq_data = get_faqs_for_page('golf-hit')
+    return render_template('golf-hit.html',
+                         page_title='Golf Hit',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/sprunka')
 def sprunka():
     faq_data = get_faqs_for_page('sprunka')

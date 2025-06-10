@@ -351,6 +351,35 @@
     ],
     "conclusion": "Merge Fellas: A fun offline puzzle game! Drop and merge adorable pets to train your brain, perfect for relaxing and casual gameplay on the go."
   },
+  "red-rush": {
+    "faqs": [
+      {
+        "question": " What is Red Rush gameplay like?",
+        "answer": "Red Rush is an engaging, fast-paced game that tests your quickness and reflexes! You pilot a spaceship through an infinite world of obstructions, constantly needing to avoid obstacles and red lanes. The core gameplay is basic but difficult, pushing you to your limits."
+      },
+      {
+        "question": "How does the difficulty increase in Red Rush?",
+        "answer": "The difficulty in Red Rush ramps up every 15 seconds, as the game's speed increases to challenge your reaction time. Surviving for 30 seconds unlocks a new, harder level, which may even introduce adversaries you need to dodge or shoot."
+      },
+      {
+        "question": "What happens if you hit an obstacle or a red line?",
+        "answer": "Crashing into any obstacles or red lanes instantly ends your game in Red Rush. These red lines specifically signal hazards and obstructions, so you must steer your spaceship clear of them using your left and right arrow keys."
+      },
+      {
+        "question": "What's the main objective in Red Rush?",
+        "answer": "Your mission in Red Rush is to be quick on your feet and sharp, not missing your targets as you dive into the storm. The ultimate goal is to keep your spaceship moving as long as possible, aiming to make it out alive through all the challenges."
+      },
+      {
+        "question": "Are there many levels to conquer?",
+        "answer": "Yes, Red Rush has several levels. You unlock a new, harder level after every 30 seconds of survival, each presenting new challenges and potential adversaries that require quick dodging or shooting."
+      },
+      {
+        "question": "What kind of visual style does Red Rush use?",
+        "answer": "Red Rush utilizes simple, attractive, and speed-focused graphics. This design choice helps maintain the game's very fast-paced nature and keeps players focused on avoiding hazards under intense pressure."
+      }
+    ],
+    "conclusion": "Red Rush: A fast-paced, challenging spaceship game! Pilot your spaceship through an infinite world of obstacles, testing your reflexes and quick decision making."
+  },
   "white-horizon": {
     "faqs": [
       {

@@ -5,7 +5,7 @@ data = {
     "key": "e98cb211bb2b449fa04f59acc629bc6c",
     "keyLocation": "https://sprunkr.online/e98cb211bb2b449fa04f59acc629bc6c.txt",
     "urlList": [
-        "https://sprunkr.online/golf-hit"
+        "https://sprunkr.online/red-rush"
 
     ]
 }

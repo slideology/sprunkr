@@ -380,6 +380,35 @@
     ],
     "conclusion": "Red Rush: A fast-paced, challenging spaceship game! Pilot your spaceship through an infinite world of obstacles, testing your reflexes and quick decision making."
   },
+  "scrandle": {
+    "faqs": [
+      {
+        "question": "Ready to guess stadium food? What is Scrandle?",
+        "answer": "Scrandle is a uniquely flavorful, browser-based food comparison game inspired by the viral concept of 'football scran' – food found at stadiums! It's a fun guessing challenge where you determine which of two real stadium dishes is rated higher by the crowd."
+      },
+      {
+        "question": "How does the 'Guess the Higher-Rated Meal' gameplay work?",
+        "answer": "In each round of Scrandle, you're presented with two photos of actual stadium food. You simply choose the meal you believe has a higher user rating. Each correct guess extends your winning streak, but one wrong choice ends the current round, similar to Wordle's single-chance approach."
+      },
+      {
+        "question": "What kind of cultural elements does Scrandle feature?",
+        "answer": "Scrandle is a blend of quiz, community insight, and a celebration of football fan culture, particularly strong in the UK where matchday meals are a cherished tradition. It captures the humor, passion, and quirks of fans."
+      },
+      {
+        "question": "Why is Scrandle an addictive daily puzzle game?",
+        "answer": "The addictiveness comes from judging stadium food visually, the pressure of building a streak (like Wordle or Higher or Lower), and its connection to vibrant football fan culture. It's a quick, repeatable daily challenge that keeps players coming back."
+      },
+      {
+        "question": "Can I learn anything from playing Scrandle?",
+        "answer": "Surprisingly, yes! Scrandle can be educational. You'll learn which types of meals are popular at different football clubs and even discover which stadiums might serve surprisingly top-tier cuisine based on real fan reviews."
+      },
+      {
+        "question": "Who would enjoy playing Scrandle?",
+        "answer": "Scrandle is perfect for football fans with a sense of humor, foodies looking for quirky new games, daily puzzle players, and anyone confident they can spot a five-star sausage roll just by looking!"
+      }
+    ],
+    "conclusion": "Scrandle: A fun, addictive daily food guessing game! Guess which stadium meal is rated higher, test your foodie skills, and dive into the world of football scran."
+  },
   "white-horizon": {
     "faqs": [
       {

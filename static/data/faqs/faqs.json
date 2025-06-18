@@ -409,6 +409,35 @@
     ],
     "conclusion": "Scrandle: A fun, addictive daily food guessing game! Guess which stadium meal is rated higher, test your foodie skills, and dive into the world of football scran."
   },
+  "stonecraft": {
+    "faqs": [
+      {
+        "question": "Ready for an addictive mining game? Tell me about Stonecraft.",
+        "answer": "Stonecraft is an addictive clicker game where you mine for resources, manufacture tools, and build powerful instruments. It’s all about the thrilling loop of breaking stone, finding valuables, and continuously improving your craft to hunt for rarer riches."
+      },
+      {
+        "question": "How do you earn money in Stonecraft?",
+        "answer": "You earn money in Stonecraft by working hard with your pick. You repeatedly beat huge stones until they split, and valuables found inside can then be sold or stored in your warehouse. Selling these findings is how you accumulate wealth."
+      },
+      {
+        "question": "What is the role of tools in Stonecraft?",
+        "answer": "Tools are crucial! You can make new tools from specific materials you find, and these tools help you smash stones faster and easier. The better your tools, the more efficient your mining becomes, boosting your overall effort."
+      },
+      {
+        "question": "What are some key tips for starting out in Stonecraft?",
+        "answer": "When starting, it’s advised to focus on improving 'Fire Mastery' and 'Hunting' to unlock important technologies. Also, explore caves for rare materials and ancient secrets, and remember to gather enough food before winter to ensure survival."
+      },
+      {
+        "question": "Does Stonecraft have idle progression?",
+        "answer": "Yes, a tip suggests that you can 'Let more tribal members automatically assemble and build,' implying that there are ways to automate parts of the gathering and building process, allowing for some idle progression."
+      },
+      {
+        "question": "What makes Stonecraft so rewarding?",
+        "answer": "The game is highly rewarding because the deeper you investigate, the more valuable your finds grow. You're constantly converting ordinary resources into powerful tools, which in turn helps you hunt for even rarer riches, creating a satisfying cycle of growth."
+      }
+    ],
+    "conclusion": "Stonecraft: An addictive mining game! Mine resources, craft tools, and build powerful instruments to hunt for rarer riches."
+  },
   "white-horizon": {
     "faqs": [
       {

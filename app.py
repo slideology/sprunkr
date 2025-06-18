@@ -271,7 +271,6 @@ def scrandle():
                          translations=get_translations())
 
 @app.route('/stonecraft')
-
 def stonecraft():
     faq_data = get_faqs_for_page('stonecraft')
     return render_template('stonecraft.html',

@@ -270,6 +270,14 @@ def scrandle():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/ssspicy')
+def ssspicy():
+    faq_data = get_faqs_for_page('ssspicy')
+    return render_template('ssspicy.html',
+                         page_title='Ssspicy',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/stonecraft')
 def stonecraft():
     faq_data = get_faqs_for_page('stonecraft')

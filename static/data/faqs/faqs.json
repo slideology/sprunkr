@@ -438,6 +438,35 @@
     ],
     "conclusion": "Stonecraft: An addictive mining game! Mine resources, craft tools, and build powerful instruments to hunt for rarer riches."
   },
+  "ssspicy": {
+    "faqs": [
+      {
+        "question": "Ready for a spicy puzzle? Tell me about Ssspicy.",
+        "answer": "Ssspicy is a mini puzzle game where you guide a feisty snake to eat fiery chilies and conquer quirky spatial challenges. It's a clever and funny game where simple moves turn into a spicy, brain-burning puzzle full of charm!"
+      },
+      {
+        "question": "What is the core gameplay of Ssspicy?",
+        "answer": "The core gameplay is guiding your snake to eat all chilies on the stage and then reach the exit. Each chili is a puzzle piece because when pushed, it slides unless blocked, requiring you to think ahead and precisely stop it in an edible spot."
+      },
+      {
+        "question": "How does the snake's fire breath affect gameplay?",
+        "answer": "After eating a chili, your snake automatically breathes fire and dashes backward. This 'spicy recoil' is a critical mechanic! It can either open new paths for puzzle-solving or accidentally throw off your plan, so you must factor it into every move."
+      },
+      {
+        "question": "What makes Ssspicy a 'brain-burning' puzzle?",
+        "answer": "Ssspicy becomes brain-burning because you need to plan your path carefully, considering how each chili will slide and how your snake's backward dash will affect the board. Levels gradually add complexity with barriers and traps, constantly challenging your spatial reasoning."
+      },
+      {
+        "question": "Why is Ssspicy so funny to play?",
+        "answer": "The humor comes from the hilarious twists and unexpected reactions. Seeing your chili-eating snake breathe fire and launch itself backward like a rocket, or watching food slip into ridiculous spots, makes the game incredibly funny and unpredictable."
+      },
+      {
+        "question": "Are there many levels in Ssspicy?",
+        "answer": "Yes, Ssspicy features numerous levels with increasing difficulty, ensuring that your brain is continuously challenged as you progress through more complex layouts, barriers, and traps."
+      }
+    ],
+    "conclusion": "Ssspicy: A spicy, brain-burning puzzle game! Guide your chili-eating snake through tricky spatial challenges and enjoy the unexpected humor."
+  },
   "white-horizon": {
     "faqs": [
       {

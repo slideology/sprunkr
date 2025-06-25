@@ -269,6 +269,14 @@ def god_simulator():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+@app.route('/block-blast-3d')
+def block_blast_3d():
+    faq_data = get_faqs_for_page('block-blast-3d')
+    return render_template('block-blast-3d.html',
+                         page_title='Block Blast 3D',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 
 @app.route('/scrandle')
 def scrandle():

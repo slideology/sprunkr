@@ -261,6 +261,14 @@ def golf_hit():
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
 
+@app.route('/dadish')
+def dadish():
+    faq_data = get_faqs_for_page('dadish')
+    return render_template('dadish.html',
+                         page_title='Dadish',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
 @app.route('/god-simulator')
 def god_simulator():
     faq_data = get_faqs_for_page('god-simulator')

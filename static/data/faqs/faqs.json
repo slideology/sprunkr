@@ -554,6 +554,35 @@
     ],
     "conclusion": "Dadish: A lighthearted platform adventure! Jump, dodge, and reunite the veggie family in Dadish, a retro-style platformer with hilarious humor."
   },
+  "flying-kong": {
+    "faqs": [
+      {
+        "question": "Take on the role of a Flying Kong: What's the gameplay like?",
+        "answer": "In Flying Kong, you play as a gorilla flying through a lush jungle, constantly steering to avoid quirky, hilarious obstacles. The main gameplay loop involves guiding your Kong, collecting as many delicious bananas as possible to boost your score, and using them to acquire cool in-game items like new skins."
+      },
+      {
+        "question": "How does the difficulty of Flying Kong change?",
+        "answer": "Flying Kong features progressive difficulty. As you soar deeper into the adventure, you'll encounter increasingly tricky obstacles and the game's speed will increase. This demands quicker reflexes to guide your Kong forward without bumping into any hazards."
+      },
+      {
+        "question": "Are there any visual tricks or challenges?",
+        "answer": "Yes, you need to be careful because the yellow color of bananas and chickens can look quite similar at a glance! This makes it easy to mistake one for the other, especially during fast-paced speeds, adding a unique challenge to your banana counts."
+      },
+      {
+        "question": "What are the key features that make Flying Kong fun?",
+        "answer": "Flying Kong offers endless gameplay packed with fun and hilarious moments, a wide range of unlockable skins hatched from eggs, vibrant 3D environments with colorful backgrounds and quirky animal designs, progressive difficulty, and simple, easy-to-use controls."
+      },
+      {
+        "question": "How do you control your gorilla in Flying Kong?",
+        "answer": "The game uses simple, easy-to-use controls: you just use the left mouse button to control the Flying Kong's movement, steering it left or right to dodge obstacles and collect items."
+      },
+      {
+        "question": "What's the ultimate goal in Flying Kong?",
+        "answer": "The ultimate goal is to prove your skills by traveling as far as you can, dodging all obstacles, collecting bananas, and reaching your best-ever high scores in this thrilling jungle adventure."
+      }
+    ],
+    "conclusion": "Flying Kong: A thrilling 3D arcade endless runner! Fly a gorilla through a lush jungle, avoiding obstacles and collecting bananas."
+  },
   "white-horizon": {
     "faqs": [
       {

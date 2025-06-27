@@ -269,6 +269,17 @@ def dadish():
                          dynamic_faqs=faq_data['faqs'],
                          conclusion=faq_data['conclusion'],
                          translations=get_translations())
+
+@app.route('/flying-kong')
+
+def flying_kong():
+    faq_data = get_faqs_for_page('flying-kong')
+    return render_template('flying-kong.html',
+                         page_title='Flying Kong',
+                         dynamic_faqs=faq_data['faqs'],
+                         conclusion=faq_data['conclusion'],
+                         translations=get_translations())
+
 @app.route('/god-simulator')
 def god_simulator():
     faq_data = get_faqs_for_page('god-simulator')

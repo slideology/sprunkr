@@ -1,0 +1,46 @@
+<!-- 广告 iframe 组件：将第三方脚本放入受限的 iframe 中，避免影响主页面 -->
+<div class="container mx-auto px-4 py-6">
+    <!--
+        说明：
+        - 使用 sandbox 限制 iframe 权限，最大限度降低第三方脚本风险。
+        - 仅放开必要权限：scripts（运行脚本）、popups（允许弹窗）、
+          popups-to-escape-sandbox（允许从弹窗跳出沙盒）、
+          top-navigation-by-user-activation（仅用户操作时允许跳转）。
+        - 使用 srcdoc 将提供的第三方 script 代码内嵌到 iframe 文档中，避免污染主页面。
+        - loading=lazy 延迟加载，提升性能；referrerpolicy 限制引用信息；
+          allow属性仅在需要的情况下开放，保持最小权限。
+    -->
+    <div class="w-full max-w-5xl mx-auto">
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow border border-gray-200 dark:border-gray-700 p-3">
+            <div class="relative" style="padding-top: 0;">
+                <iframe
+                    title="Sponsored"
+                    class="w-full border-0"
+                    style="height: 280px;"
+                    sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    srcdoc='<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html,body { margin:0; padding:0; background:#fff; }
+    .ad-wrap { display:flex; align-items:center; justify-content:center; height:100vh; }
+  </style>
+</head>
+<body>
+  <div class="ad-wrap">
+    <!-- 第三方广告脚本（按用户提供） -->
+    <script type="text/javascript" src="//pl27660407.revenuecpmgate.com/16/23/11/162311fdf6d34a3db9611e162756964a.js"></script>
+  </div>
+</body>
+</html>'>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
